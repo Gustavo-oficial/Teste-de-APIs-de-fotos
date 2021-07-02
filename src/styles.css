@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+body {
+  background: azure;
+  margin: 0 auto;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.typewriter-holder {
+  width: 1700px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.typewriter-holder p {
+  font-weight: bold;
+  font-size: 100px;
+  font-family: "New Rocker", cursive;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background: #0e7250;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-widht {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Catamaran", sans-serif !important;
+}
+.header-left-img {
+  width: 9%;
+  border-radius: 400px;
+  margin-right: 20px;
+}
+.header-left-p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-text-stroke: 0.5px white;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.header-right {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+.header-right-p {
+  font-size: 30px;
+  text-decoration: none;
+  text-shadow: yellowgreen;
+}
+
+.Title {
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.Title h1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-text-stroke: 0.5px white;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.Title {
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+.Title h1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-text-stroke: 0.5px white;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.Title__underline {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0.3em;
+  height: 3px;
+  background-color: #17bdef;
+  z-index: 5;
+  transition: transform 170ms cubic-bezier(0.2, 0.1, 0.15, 0.3);
+}
+.Title__highlight {
+  position: absolute;
+  width: 100%;
+  bottom: -50;
+  left: 0;
+  height: 50px;
+  background-color: #43ffbe;
+  z-index: -1;
+  transition: transform 200ms ease;
+}
+.Title__filled {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  top: 0;
+  clip-path: polygon(0% 100%, 0% 99%, 100% 99%, 100% 100%);
+  transition: clip-path 600ms cubic-bezier(0.2, 0.1, 0.15, 1.32);
+}
+.Title:hover .Title__filled {
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+}
+.Title:hover .Title__underline {
+  transform: translateY(-1.6em);
+}
+.Title:hover .Title__highlight {
+  transform: translateY(-2.2em);
+}
+.container {
+  width: 100%;
+  height: 2300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container-top {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.container-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 1500px;
+  align-items: center;
+}
+.bichos-imagens {
+  height: 70%;
+  width: 80%;
+}
+.tras-imagem {
+  flex-direction: column;
+  background-color: white;
+  height: 400px;
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.titulo-imagem{
+  font-family: "New Rocker", cursive;
+  font-size: 40px;
+}
+.prettybutton {
+  background-color: #f25d27 !important;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  margin: auto;
+  color: azure;
+  font-family: Helvetica;
+  font-size: 15px !important;
+  padding: 14px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.prettybutton:hover {
+  background: #03658c !important;
+  transform: scale(1.05) !important;
+  transition: 0.2s !important;
+}
